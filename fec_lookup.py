@@ -5,7 +5,7 @@ import requests
 from requests.adapters import HTTPAdapter, Retry
 from textpack import tp
 
-fec_api_key = '***REMOVED***'
+fec_api_key = open('fec_api_key.text').read()
 url_params = '&per_page=100&&min_amount=1000'
 
 s = requests.Session()
