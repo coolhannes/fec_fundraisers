@@ -10,7 +10,8 @@ from flask import Flask, request
 app = Flask(__name__)
 
 # allow both GET and POST requests
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/', methods=['GET', 'POST']
+)
 def form_example():
     # handle the POST request
     if request.method == 'POST':
